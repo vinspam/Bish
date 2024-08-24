@@ -3,7 +3,6 @@
 }
 
 .hero {
-    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -453,9 +452,9 @@
     }
 
     .aboutDescription {
-        font-size: 14px;
+        font-size: 17px;
         font-weight: 600;
-        line-height: 22px;
+        line-height: 26px;
     }
 
     .featureBox {

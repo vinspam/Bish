@@ -63,18 +63,18 @@
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
 
-    .heroMargin {
-        padding-top: 50px;
+    .featureTitle {
+        font-size: 16px;
     }
 
-    .featureTitle {
-        font-size: 20px;
+    .featureItems {
+        margin-top: 5px;
     }
 
     .heroTitleMargin {
         margin-top: 0;
-        font-size: 20px;
-        line-height: 23.8px;
+        font-size: 25px;
+        line-height: 30.8px;
     }
 
     .logoMenu1 {
