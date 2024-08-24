@@ -1,5 +1,4 @@
 import React from "react"
-import { Container } from "@mui/system"
 import { house, sms1, user } from "../../constant"
 import { FeatureBox } from "../../components/box/FeatureBox"
 
@@ -20,7 +19,7 @@ const featuresInfo = [
 
 export const Features = () => (
   <div className="features featureMargin">
-    <div className="featureTitle">How to get your home’s BISH! code</div>
+    <div className="heroTitleMargin" style={{ fontWeight: '600' }}>How to get your home’s BISH! code</div>
     <div className="featureItems">
       {featuresInfo.map((item, index) => (
         <FeatureBox key={index} item={item} />

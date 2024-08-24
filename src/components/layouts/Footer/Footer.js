@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="footer">
         <Container>
             <p className="footerTitle">Footer Text</p>
-            <p>© BANG! TECHNOLOGIES</p>
+            <p>© BISH! TECHNOLOGIES</p>
         </Container>
     </div>
 )
