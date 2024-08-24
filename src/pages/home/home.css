@@ -16,15 +16,6 @@
     margin: 42px 0 28px 0;
 }
 
-.heroBox1 {
-    width: 70%;
-    border-radius: 20px;
-    background-color: #f5f5f5;
-    padding: 20px;
-    margin: 100px 0;
-    text-align: center;
-}
-
 .bg1 {
     position: absolute;
     width: 70%;
@@ -244,7 +235,6 @@
     text-align: center;
 }
 
-
 @media screen and (min-width: 1200px) {
     .bg1 {
         width: 880px !important;
@@ -343,12 +333,6 @@
 
     .section {
         width: 100%;
-    }
-
-    .heroBox1 {
-        width: 90%;
-        border-radius: 0;
-        padding: 40px;
     }
 
     .iphoneSquare {
@@ -470,6 +454,8 @@
 
     .aboutDescription {
         font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
     }
 
     .featureBox {
@@ -487,7 +473,7 @@
     }
 
     .requirementCard {
-        width: 286px;
+        width: 250px;
         border-radius: 6.5px;
         padding: 40px 30px
     }
@@ -499,5 +485,11 @@
     .requirementCard .aboutDescription {
         font-weight: 400;
         line-height: 20px;
+    }
+
+    .featureTitle {
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 24px;
     }
 }

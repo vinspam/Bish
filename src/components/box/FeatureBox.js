@@ -7,6 +7,6 @@ export const FeatureBox = ({ item }) => (
         <img src={item.icon} alt={item.icon} style={{ width: '41%' }} />
       </span>
     </div>
-    <p className="aboutDescription">{item.title}</p>
+    <p className="featureBoxTitle">{item.title}</p>
   </div>
 )

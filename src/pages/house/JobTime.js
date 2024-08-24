@@ -14,9 +14,9 @@ export const JobTime = () => (
   <div className='flexWrap'>
     <div className="section itemCenter" style={{ position: 'relative' }}>
       <img className="bg2" src={bg2} alt="bg1" />
-      <img className="iphone" src={iphone2} alt="iphone" />
+      <img className="iphone iphoneMargin" src={iphone2} alt="iphone" />
     </div>
-    <div className="section">
+    <div className="section itemCenter">
       <div className="heroBox1">
         <p className="heroTitle">Need a plumber? Stop the search. BISH! has arrived</p>
         <p className="aboutDescription" style={{ color: `var(--primary-bgColor)`, fontWeight: '700' }}>Join the $1 million savings challenge by using your home's BISH! code to save BIG on your next tradesperson.</p>
