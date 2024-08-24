@@ -64,7 +64,9 @@
 @media screen and (min-width: 300px) and (max-width: 768px) {
 
     .featureTitle {
-        font-size: 16px;
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 20px;
     }
 
     .featureItems {
@@ -73,8 +75,8 @@
 
     .heroTitleMargin {
         margin-top: 0;
-        font-size: 25px;
-        line-height: 30.8px;
+        font-size: 27px;
+        line-height: 34.8px;
     }
 
     .logoMenu1 {

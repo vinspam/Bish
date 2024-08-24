@@ -18,7 +18,7 @@ export const JobTime = () => (
     </div>
     <div className="section itemCenter">
       <div className="heroBox1">
-        <p className="heroTitle">Need a plumber? Stop the search. BISH! has arrived</p>
+        <p className="heroTitle heroTitleMargin">Need a plumber? Stop the search. BISH! has arrived</p>
         <p className="aboutDescription" style={{ color: `var(--primary-bgColor)`, fontWeight: '700' }}>Join the $1 million savings challenge by using your home's BISH! code to save BIG on your next tradesperson.</p>
         <div>
           {checkInfo.map((title, index) => (

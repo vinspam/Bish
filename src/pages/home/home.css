@@ -452,9 +452,9 @@
     }
 
     .aboutDescription {
-        font-size: 17px;
+        font-size: 22px;
         font-weight: 600;
-        line-height: 26px;
+        line-height: 30px;
     }
 
     .featureBox {
@@ -483,7 +483,8 @@
 
     .requirementCard .aboutDescription {
         font-weight: 400;
-        line-height: 20px;
+
+        line-height: 29px;
     }
 
     .featureTitle {
