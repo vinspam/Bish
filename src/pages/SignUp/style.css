@@ -145,7 +145,8 @@
   width: 70%;
   padding: 10px;
   margin-top: 30px;
-  padding: 12.14px, 15.17px, 12.14px, 15.17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #fb2a63;
   border: none;
   border-radius: 10.16px;

@@ -12,9 +12,9 @@ const FaqSec = () => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
             id="panel1-header"
-            className="faqTitle"
+
           >
-            What's a BISH! code?
+            <div className="faqAccTitle">What's a BISH! code?</div>
           </AccordionSummary>
           <AccordionDetails className="faqText">
             Every home has been allocated a BISH! code. A BISH! code is another
@@ -27,9 +27,9 @@ const FaqSec = () => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2-content"
             id="panel2-header"
-            className="faqTitle"
+
           >
-            So my home has a BISH! code?
+            <div className="faqAccTitle">So my home has a BISH! code?</div>
           </AccordionSummary>
           <AccordionDetails className="faqText">
             Yes, that's right. Every home has a BISH! code waiting to be
@@ -42,9 +42,12 @@ const FaqSec = () => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2-content"
             id="panel2-header"
-            className="faqTitle"
+            className="faqAccTitle"
           >
-            How do I get my home’s BISH! code?
+            <div className="faqAccTitle">
+              How do I get my home’s BISH! code?
+            </div>
+
           </AccordionSummary>
           <AccordionDetails className="faqText">
             Just enter your postcode to get started. Please note that BISH!
