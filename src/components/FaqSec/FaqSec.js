@@ -6,7 +6,7 @@ const FaqSec = () => {
   return (
     <div className="faqContainer">
       <div className="faqWrapper">
-        <div className="faqTitle">FAQ</div>
+        <p className="bigTitle" style={{ textAlign: 'center' }}>FAQ</p>
         <Accordion className="accordionBody">
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -14,7 +14,7 @@ const FaqSec = () => {
             id="panel1-header"
 
           >
-            <div className="faqAccTitle">What's a BISH! code?</div>
+            <div className="bigTitle">What's a BISH! code?</div>
           </AccordionSummary>
           <AccordionDetails className="faqText">
             Every home has been allocated a BISH! code. A BISH! code is another
@@ -29,7 +29,7 @@ const FaqSec = () => {
             id="panel2-header"
 
           >
-            <div className="faqAccTitle">So my home has a BISH! code?</div>
+            <div className="bigTitle">So my home has a BISH! code?</div>
           </AccordionSummary>
           <AccordionDetails className="faqText">
             Yes, that's right. Every home has a BISH! code waiting to be
@@ -42,9 +42,9 @@ const FaqSec = () => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2-content"
             id="panel2-header"
-            className="faqAccTitle"
+            className="bigTitle"
           >
-            <div className="faqAccTitle">
+            <div className="bigTitle">
               How do I get my home’s BISH! code?
             </div>
 

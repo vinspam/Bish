@@ -79,7 +79,6 @@
 
 .jobTypes {
     width: 100%;
-    margin-top: 100px;
     text-align: center;
 }
 
@@ -233,7 +232,7 @@
 
     .jobBox {
         margin-top: 20px;
-        width: 130px;
+        width: 150px;
     }
 
     .jobIcon img {
@@ -256,6 +255,9 @@
 }
 
 @media screen and (max-width: 500px) {
+    .add {
+        width: 100% !important;
+    }
 
     .heroTitle {
         font-size: 20px;
@@ -286,7 +288,7 @@
 
     .jobBox {
         margin-top: 0;
-        width: 140px;
+        width: 145px;
     }
 
     .requirementCard {
@@ -309,6 +311,7 @@
     .showContainer {
         width: 260px;
         padding: 55px 15px;
+        margin-top: 20px;
     }
 
     .number {

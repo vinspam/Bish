@@ -55,7 +55,7 @@
   line-height: clamp(2.5rem, 3.9vw, 3rem);
   font-weight: 800;
   font-family: 'RaleWay';
-  margin: 0;
+  margin: 20px;
 }
 
 .title {

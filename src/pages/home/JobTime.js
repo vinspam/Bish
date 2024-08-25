@@ -18,7 +18,7 @@ export const JobTime = () => (
         <div className="section itemCenter sectionMargin" style={{ width: '55%', }}>
           <Container>
             <div className='jobText'>
-              <p className='title'>Experts to your door at your home’s exclusive  price for 2024. That’s BISH!</p>
+              <p className='bigTitle'>Experts to your door at your home’s exclusive  price for 2024. That’s BISH!</p>
               <p></p>
               <p className='subTitle subTitleMargin'>Use your home’s BISH! code to save<br /> money on all kinds of plumber jobs</p>
             </div>
@@ -26,10 +26,9 @@ export const JobTime = () => (
         </div>
       </div>
       <div className='jobTypes' style={{ paddingTop: '10px' }}>
-        <span className='title'>BISH! Tradespeople get the job done</span>
         <div className='flexWrap spaceAround'>
           {jobTypeInfo.map((name, index) => (
-            <JobBox key={index} name={name} />
+            <JobBox key={index} index={index} name={name} />
           ))}
         </div>
       </div>

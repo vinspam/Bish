@@ -1,8 +1,8 @@
 import React from 'react'
 import { checkRound } from '../../constant'
 
-export const JobBox = ({ name }) => (
-  <div className='jobBox'>
+export const JobBox = ({ name, index }) => (
+  <div className={`${index === 0 && 'add'} jobBox`}>
     <div className='itemCenter jobIcon'>
       <img src={checkRound} alt={checkRound} />
     </div>
