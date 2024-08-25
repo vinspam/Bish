@@ -6,6 +6,10 @@
     padding-bottom: 70px;
 }
 
+.hero .bigTitle {
+    margin: 0;
+}
+
 .section {
     width: 50%;
     height: 100%;
@@ -135,6 +139,10 @@
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
+    .hero .bigTitle {
+        text-align: center;
+    }
+
     .iphoneSquare {
         margin-bottom: 50px;
     }
@@ -160,7 +168,7 @@
     }
 
     .featureItems {
-        margin-top: -20px;
+        margin-top: -10px;
     }
 
     .featureIcon {

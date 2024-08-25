@@ -1,20 +1,20 @@
 import React from "react"
 import { Container } from "@mui/system"
-import { book, locationWhite, sms, } from "../../constant"
-import { FeatureBox2 } from "../../components/box/FeatureBox2"
+import { house, user, sms1, } from "../../constant"
+import { FeatureBox } from "../../components/box/FeatureBox"
 
 const featuresInfo = [
   {
-    icon: locationWhite,
-    title: 'Find your Address'
+    icon: house,
+    title: 'Enter your postcode to check BISH! codes are available where you live'
   },
   {
-    icon: book,
-    title: 'Get  Your Home’s BISH! by SMS'
+    icon: user,
+    title: 'If BISH! codes are available then tell us your details'
   },
   {
-    icon: sms,
-    title: 'Book your plumber and get your 2024 BISH!'
+    icon: sms1,
+    title: `We'll send your home's BISH by SMS`
   }
 ]
 
@@ -24,7 +24,7 @@ export const Features = () => (
       <p className="bigTitle fontInter">How to get your home’s BISH! code</p>
       <div className="featureItems">
         {featuresInfo.map((item, index) => (
-          <FeatureBox2 key={index} item={item} />
+          <FeatureBox key={index} item={item} />
         ))}
       </div>
     </Container>

@@ -19,7 +19,7 @@ const featuresInfo = [
 
 export const NewFeatures = () => (
   <div className="features">
-    <div className="title">How to get your home’s BISH! code</div>
+    <div className="bigTitle">How to get your home’s BISH! code</div>
     <div className="featureItems">
       {featuresInfo.map((item, index) => (
         <FeatureBox key={index} item={item} />

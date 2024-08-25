@@ -11,7 +11,7 @@ export const NewHero = () => (
     <div className="hero flexWrap">
       <div className="section" style={{ color: '#272727' }}>
         <Container>
-          <p className="title">
+          <p className="bigTitle">
             Fed up of high prices? <br />
             Don't fret. BISH! codes have arrived
           </p>

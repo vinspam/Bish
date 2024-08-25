@@ -26,7 +26,7 @@ export const JobTime = () => (
         </div>
       </div>
       <div className='jobTypes' style={{ paddingTop: '10px' }}>
-        <div className='flexWrap spaceAround'>
+        <div className='flexWrap spaceAround' style={{ backgroundColor: '#F5F5F5', padding: '20px 0' }}>
           {jobTypeInfo.map((name, index) => (
             <JobBox key={index} index={index} name={name} />
           ))}
@@ -34,8 +34,10 @@ export const JobTime = () => (
       </div>
     </Container>
     <div className='about' style={{ textAlign: 'center', marginTop: '30px' }}>
-      <p className='title'>Need a tradesperson? Your home's BISH! code has got your back.</p>
-      <p className='subTitle' style={{ margin: '0 10%' }}>The next time you need a tradesperson the first price you check should really be your home's 2024 BISH! price. Here's why.</p>
+      <Container>
+        <p className='title'>Need a tradesperson? Your home's BISH! code has got your back.</p>
+        <p className='subTitle' style={{ margin: '0 10%' }}>The next time you need a tradesperson the first price you check should really be your home's 2024 BISH! price. Here's why.</p>
+      </Container>
     </div>
   </div>
 )

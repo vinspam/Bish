@@ -4,7 +4,7 @@ import { CheckSquare } from "../../components/checkSquar/CheckSquar"
 
 
 const checkInfo = [
-  'Block Toilets Sinks, Pipes and Drains', 'Hot Water Problems', 'Burst Pipes', 'Overflows', 'Floods', 'And more'
+  'Toilets, Sinks, Pipes and Drains', 'Hot Water Problems', 'Burst Pipes', 'Overflows', 'Floods', 'And more'
 ]
 
 export const About = () => (

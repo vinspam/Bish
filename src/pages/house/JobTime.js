@@ -22,7 +22,7 @@ export const NewJobTime = () => (
       <div className="section itemCenter" style={{ width: '55%' }}>
         <Container>
           <div className="greyBox">
-            <p className="title">Need a plumber? Stop the search. BISH! has arrived</p>
+            <p className="bigTitle">Need a plumber? Stop the search. BISH! has arrived</p>
             <p className="subTitle" style={{ color: `var(--primary-bgColor)` }}>Join the $1 million savings challenge by using your home's BISH! code to save BIG on your next tradesperson.</p>
             <div>
               {checkInfo.map((title, index) => (

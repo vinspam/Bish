@@ -172,7 +172,7 @@
 }
 
 .faqTitle {
-  font-size: 43.46px;
+  font-size: clamp(2rem, 3.5vw, 3rem);
   color: white;
   text-align: center;
   font-family: "Gilroy-Bold";
@@ -188,7 +188,6 @@
 
 .faqText {
   font-family: "Gilroy-Medium";
-  font-size: 21.73px;
   line-height: 25.46px;
   color: white !important;
 }
