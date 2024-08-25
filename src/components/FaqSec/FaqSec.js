@@ -20,6 +20,7 @@ const accordionData = [
 ];
 
 const FaqSec = () => {
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -34,7 +35,7 @@ const FaqSec = () => {
           <div className="faqTitle">FAQ</div>
           <div>
             {accordionData.map((item, index) => (
-              <div key={index} onClick={() => toggleFAQ(index)}>
+              <div style={{ marginBottom: "45px" }} key={index} onClick={() => toggleFAQ(index)}>
                 <div
                   className={`faq-header ${activeIndex === index ? "faq-header-active" : ""
                     }`}
@@ -49,13 +50,14 @@ const FaqSec = () => {
                         }`}
                     />
                   </h3>
+                  <div
+                    className={`faq-content ${activeIndex === index ? "faq-content-open" : ""
+                      }`}
+                  >
+                    {item.content}
+                  </div>
                 </div>
-                <p
-                  className={`faq-content ${activeIndex === index ? "faq-content-open" : ""
-                    }`}
-                >
-                  {item.content}
-                </p>
+
               </div>
             ))}
           </div>
