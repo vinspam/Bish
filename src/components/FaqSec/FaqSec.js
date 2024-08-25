@@ -30,9 +30,9 @@ const FaqSec = () => {
   return (
     <div className="faqContainer">
       <div className="faqWrapper">
-        <div style={{ width: "95%", margin: "auto" }}>
+        <div style={{ width: "83%", margin: "auto" }}>
           <div className="faqTitle">FAQ</div>
-          <div className="faq-list">
+          <div>
             {accordionData.map((item, index) => (
               <div key={index} onClick={() => toggleFAQ(index)}>
                 <div
