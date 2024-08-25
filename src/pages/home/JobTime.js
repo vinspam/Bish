@@ -35,7 +35,7 @@ export const JobTime = () => (
     </Container>
     <div className='about' style={{ textAlign: 'center', marginTop: '30px' }}>
       <Container>
-        <p className='title'>Need a tradesperson? Your home's BISH! code has got your back.</p>
+        <p className='bigTitle'>Need a tradesperson? Your home's BISH! code has got your back.</p>
         <p className='subTitle' style={{ margin: '0 10%' }}>The next time you need a tradesperson the first price you check should really be your home's 2024 BISH! price. Here's why.</p>
       </Container>
     </div>

@@ -10,7 +10,7 @@ const checkInfo = [
 export const About = () => (
   <div className="about">
     <Container>
-      <p className="title" style={{ fontFamily: 'Inter' }}>Use your BISH! Code on big jobs and small jobs</p>
+      <p className="bigTitle" style={{ fontFamily: 'Inter' }}>Whatever the job size use your home's BISH! code to pay less.</p>
       <p className="subTitle">Whether it’s a shower fix or big boiler job your home’s BISH! code will save your money.</p>
       <div className="flexWrapAround" style={{ paddingTop: '20px' }}>
         {checkInfo.map((name, index) => (

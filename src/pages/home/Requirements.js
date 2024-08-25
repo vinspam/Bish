@@ -32,9 +32,9 @@ export const Requirements = () => (
       </div>
     </div>
     <div className='about' style={{ textAlign: 'center' }}>
-      <p className='title number' style={{ fontFamily: 'Inter' }}>Already got your home`s tradesperson BANG! code?</p>
-      <p className='text' style={{ margin: '0 5%' }}>Call your local BANG! team now and tell us about the job and we`ll confirm your BANG! price.</p>
-      <p className="title number">0800 367 3993</p>
+      <p className='bigTitle number' style={{ fontFamily: 'Inter' }}>Already got your home`s tradesperson BISH! code?</p>
+      <p className='text' style={{ margin: '0 5%' }}>Call your local BANG! team now and tell us about the job and we`ll confirm your BISH! price.</p>
+      <p className="bigTitle number">0800 367 3993</p>
     </div>
   </>
 )
