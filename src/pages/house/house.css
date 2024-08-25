@@ -1,127 +1,187 @@
-.logoMenu1 {
-    margin-bottom: 120px;
+.logoMenu {
+    margin: 20px 0 0 0;
 }
 
-.heroTitleMargin {
-    font-weight: 800;
+.hero {
+    padding-bottom: 70px;
 }
 
-.featureTitle {
-    font-size: 30px;
-    font-family: 'Raleway';
-    font-weight: 800;
-    line-height: 45px;
+.section {
+    width: 50%;
+    height: 100%;
+    padding: 40px 0;
 }
 
-.featureMargin {
-    margin-top: 150px;
-    padding: 34px 0 46px 0;
+.iphone {
+    float: right;
 }
 
-.featureBoxTitle {
-    font-family: 'Raleway';
-    color: black;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 36px;
-    margin-top: 25px;
+.bg1 {
+    position: absolute;
+    width: 65%;
+    right: 0;
+    top: 0;
+    z-index: -5;
 }
 
-.iphoneMargin {
-    margin-top: 13px;
+.bg2 {
+    position: absolute;
+    width: 54%;
+    left: 0;
+    top: 0;
+    z-index: -5;
 }
 
-.heroBox1 {
-    width: 70%;
-    border-radius: 20px;
-    background-color: #f5f5f5;
-    padding: 20px;
+
+.features {
+    padding: 36px 0 40px 0;
     text-align: center;
+    background-color: #F6F6F6;
+    max-width: 1200px !important;
+    margin: auto;
+}
+
+.featureItems {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featureBox {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.featureIcon {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    background-color: var(--primary-bgColor);
+}
+
+.featureIconImg2 {
+    /* width: auto; */
+}
+
+.featureIconImg1 {
+    width: 48%;
+}
+
+
+.greyBox {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    padding: 14px 34px 24px 34px;
+}
+
+.greyBox p {
+    margin-left: 48px;
+}
+
+.fontInter {
+    font-family: 'Inter' !important;
 }
 
 @media screen and (max-width: 998px) {
-    .featureMargin {
-        margin-top: 60px;
+    .logoMenu {
+        width: 180px;
+    }
+
+    .hero {
+        padding-bottom: 0;
+    }
+
+    .iphone {
+        width: 80%;
+    }
+
+    .featureIcon {
+        width: 110px;
+        height: 110px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .logoMenu1 {
-        margin-bottom: 60px;
+
+    .container {
+        padding: 0 !important
     }
 
-    .featureMargin {
-        margin-top: 30px;
-        font-family: sans-serif;
-    }
-
-    .heroBox1 {
-        width: 90%;
-        margin-top: 50px;
-    }
-}
-
-@media screen and (min-width: 300px) and (max-width: 768px) {
-
-    .iphoneSquare {
-        margin-bottom: 50px !important;
-    }
-
-    .featureTitle {
-        font-size: 24px;
-        line-height: 30px;
-        padding-bottom: 20px;
-    }
-
-    .featureItems {
-        margin-top: 5px;
-    }
-
-    .heroTitleMargin {
-        margin-top: 0;
-        font-size: 30px;
-        line-height: 38.8px;
-    }
-
-    .logoMenu1 {
+    .logoMenu {
         width: 160px;
-        margin-bottom: 15px;
     }
 
-    .featureMargin {
-        margin-top: 0;
-        padding: 38px 26px;
-    }
-
-    .section {
-        padding-bottom: 2px !important;
-        padding-top: 15px;
+    .bg1 {
+        width: 100%;
     }
 
     .bg2 {
         width: 100%;
     }
 
-    .iphoneMargin {
-        margin-left: -5px !important;
+    .section {
+        width: 100% !important;
     }
 
-    .iphone1 {
-        margin: 0 !important;
+    .iphoneSquare {
+        position: relative;
+        float: right !important;
     }
 
-    .featureBoxTitle {
-        font-size: 18px;
-        line-height: 27px;
+    .fontInter {
+        font-family: 'RaleWay' !important;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .iphoneSquare {
+        margin-bottom: 50px;
+    }
+
+    .iphone {
+        width: 82%;
+        margin-top: 20px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+        padding: 15px 0;
+    }
+
+    .features {
+        padding: 18px 26px;
     }
 
     .featureBox {
         width: 250px;
         padding: 0;
-        margin-bottom: 8px;
+        margin: 12px 0;
     }
 
-    .heroBox1 {
-        margin-top: 0;
+    .featureItems {
+        margin-top: -20px;
+    }
+
+    .featureIcon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .featureIconImg2 {
+        width: 80px;
+    }
+
+    .featureIconImg1 {
+        width: 55%;
+    }
+
+
+    .subTitleMargin {
+        margin: 0 !important;
+    }
+
+    .sectionMargin {
+        margin-bottom: 0;
     }
 }

@@ -10,16 +10,13 @@ const checkInfo = [
 export const About = () => (
   <div className="about">
     <Container>
-      <div>
-        <p className="aboutTitle">Use your BISH! Code on big jobs and small jobs</p>
-        <p className="aboutDescription">Whether it’s a shower fix or big boiler job your home’s BISH! code will save your money.</p>
-        <div className="flexWrap" style={{ justifyContent: 'space-between' }}>
-          {checkInfo.map((name, index) => (
-            <CheckSquare name={name} key={index} />
-          ))}
-        </div>
+      <p className="title" style={{ fontFamily: 'Inter' }}>Use your BISH! Code on big jobs and small jobs</p>
+      <p className="subTitle">Whether it’s a shower fix or big boiler job your home’s BISH! code will save your money.</p>
+      <div className="flexWrapAround" style={{ paddingTop: '20px' }}>
+        {checkInfo.map((name, index) => (
+          <CheckSquare name={name} key={index} />
+        ))}
       </div>
-
     </Container>
   </div>
 )

@@ -8,4 +8,12 @@
 
 .footerTitle {
     font-size: 32px;
+    font-weight: 600;
+    font-family: 'RaleWay';
+    margin: 20px 0;
+}
+
+.footerSubTitle {
+    font-size: 12px;
+    font-family: 'Inter';
 }

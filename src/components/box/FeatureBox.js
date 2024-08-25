@@ -4,9 +4,9 @@ export const FeatureBox = ({ item }) => (
   <div className='featureBox'>
     <div className="itemCenter">
       <span className="featureIcon itemCenter">
-        <img src={item.icon} alt={item.icon} style={{ width: '41%' }} />
+        <img className='featureIconImg1' src={item.icon} alt={item.icon} />
       </span>
     </div>
-    <p className="featureBoxTitle">{item.title}</p>
+    <p className="cardTitle">{item.title}</p>
   </div>
 )

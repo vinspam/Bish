@@ -1,14 +1,16 @@
 import React from "react"
 
-import { Container } from "@mui/system"
 import './footer.css'
+import { Container } from "@mui/material"
 
 
 const Footer = () => (
     <div className="footer">
         <Container>
-            <p className="footerTitle">Footer Text</p>
-            <p>© BISH! TECHNOLOGIES</p>
+            <Container>
+                <p className="footerTitle">Footer Text</p>
+                <p className="footerSubTitle">© BISH! TECHNOLOGIES</p>
+            </Container>
         </Container>
     </div>
 )

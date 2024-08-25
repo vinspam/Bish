@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { bg2, checkRoundPink, iphone2 } from '../../constant'
-import { Button } from '@mui/material'
+import { Button, Container } from '@mui/material'
 
 const checkInfo = [
   `Get your home's 2024 BISH! code to unlock a huge saving on plumbers and more`,
@@ -10,30 +10,36 @@ const checkInfo = [
   `Local and reliable tradespeople so you can book with confidence`
 ]
 
-export const JobTime = () => (
-  <div className='flexWrap'>
-    <div className="section itemCenter" style={{ position: 'relative' }}>
-      <img className="bg2" src={bg2} alt="bg1" />
-      <img className="iphone iphoneMargin" src={iphone2} alt="iphone" />
-    </div>
-    <div className="section itemCenter">
-      <div className="heroBox1">
-        <p className="heroTitle heroTitleMargin">Need a plumber? Stop the search. BISH! has arrived</p>
-        <p className="aboutDescription" style={{ color: `var(--primary-bgColor)`, fontWeight: '700' }}>Join the $1 million savings challenge by using your home's BISH! code to save BIG on your next tradesperson.</p>
-        <div>
-          {checkInfo.map((title, index) => (
-            <div key={index} className="alignCenter">
-              <img src={checkRoundPink} alt="checkRound" className="checkImg" />
-              <span className="aboutDescription" style={{ margin: '10px', textAlign: 'left', fontWeight: '500' }}>
-                {title}
-              </span>
+export const NewJobTime = () => (
+  <Container className='container' style={{ position: 'relative' }}>
+    <div className='hero flexWrap'>
+      <div className="section iphoneSquare" style={{ width: '45%' }}>
+        <Container>
+          <img className="bg2" src={bg2} alt="bg2" />
+          <img className="iphone" src={iphone2} alt="iphone" style={{ float: 'left' }} />
+        </Container>
+      </div>
+      <div className="section itemCenter" style={{ width: '55%' }}>
+        <Container>
+          <div className="greyBox">
+            <p className="title">Need a plumber? Stop the search. BISH! has arrived</p>
+            <p className="subTitle" style={{ color: `var(--primary-bgColor)` }}>Join the $1 million savings challenge by using your home's BISH! code to save BIG on your next tradesperson.</p>
+            <div>
+              {checkInfo.map((title, index) => (
+                <div key={index} className="alignCenter">
+                  <img src={checkRoundPink} alt="checkRound" className="checkImg" />
+                  <span className="checkBoxTitle">
+                    {title}
+                  </span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <Link to='/'>
-          <Button className="button" variant="contained" style={{ margin: '30px 0' }}>Get my BISH! Price</Button>
-        </Link>
+          </div>
+          <Link to='/'>
+            <Button className="button" variant="contained" style={{ margin: '40px 0 10px 0' }}>Get my BISH! Price</Button>
+          </Link>
+        </Container>
       </div>
     </div>
-  </div>
+  </Container>
 )

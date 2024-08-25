@@ -24,14 +24,20 @@ const EditNumber = () => {
         <div className="eNumRigSec">
           <p className="eNumRigText">What next?</p>
           <div className="nextCon">
-            <SmsIcon style={{ color: "#FB2A63", fontSize: "33px" }} />
+            <SmsIcon
+              style={{ color: "#FB2A63", fontSize: "30px" }}
+              className="editIcon"
+            />
             <div className="nextText">
               We'll send your home's BISH!
               <br /> code by text
             </div>
           </div>
           <div className="nextCon">
-            <PhoneIcon style={{ color: "#FB2A63", fontSize: "33px" }} />
+            <PhoneIcon
+              style={{ color: "#FB2A63", fontSize: "30px" }}
+              className="editIcon"
+            />
             <div className="nextText">
               Call your local BISH! team to find
               <br /> out your exclusive BISH! price.
@@ -42,7 +48,12 @@ const EditNumber = () => {
             </div>
           </div>
           <div className="nextCon">
-            <img src={mouse} alt="mouse" style={{ width: "33px" }} />
+            <img
+              src={mouse}
+              alt="mouse"
+              style={{ width: "30px" }}
+              className="editIconImg"
+            />
             <div className="nextText">
               We'll send your home's BISH!
               <br /> code by text

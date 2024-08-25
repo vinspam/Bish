@@ -6,34 +6,40 @@ import { Link } from "react-router-dom"
 import { Button } from "@mui/material"
 
 export const Hero = () => (
-  <Container className='container'>
-    <div className="hero">
+  <Container className='container' style={{ position: 'relative' }}>
+    <Container>
+      <img className="logoMenu" src={logoMenu} alt="logoMenu" />
+    </Container>
+    <div className="hero flexWrap">
       <div className="section">
         <Container>
-          <img className="logoMenu" src={logoMenu} alt="logoMenu" />
-          <div className="heroBox">
-            <p className="heroTitle">Plumber prices are crazy. your home’s BISH! code fixes that</p>
-            <p className="aboutDescription">We got fed up of crazy plumbing quotes and now we'e on a mission to save homeowners over £1 million on plumbing jobs and more. Get your home's BISH! code to join the challenge.</p>
-          </div>
+          <div className="heroCard" style={{ background: '#F6F6F6' }}>
+            <p className="bigTitle">Plumber prices are crazy. your home’s BISH! code fixes that</p>
+            <p className="subTitle">We got fed up of crazy plumbing quotes and now we'e on a mission to save homeowners over £1 million on plumbing jobs and more. Get your home's BISH! code to join the challenge.</p>
+          </div><br />
           <div className="heroCard">
-            <span>Get your home’s 2024 BISH! code by SMS and save BIG on your next tradesperson</span> <br />
+            <span style={{ fontFamily: 'Gilroy-Regular' }}>Get your home’s 2024 BISH! code by SMS and save BIG on your next tradesperson</span> <br />
             <div className="postCode">
               <i><img src={location} alt='location' style={{ height: '20px' }} /> &nbsp;</i>
               <input placeholder="Enter your postcode to start" />
             </div>
           </div>
-          <div className="sectionText">Need a tradesperson and already got your home’s BISH! code? Great! Get your home’s exclusive BISH! price now.</div>
+          <p className="subTitle" style={{ fontWeight: '700', textTransform: 'uppercase', marginBottom: '0' }}>already got your home's bish! code?</p>
+          <p style={{ fontSize: '16px', marginTop: '5px' }}>Great. you're ready to get your BISH! price for your next tradesperson job.</p>
           <Link to='./house'>
-            <Button className="button" variant="contained">Get my BISH! Price</Button>
+            <div style={{ textAlign: 'center' }}>
+              <Button className="button" variant="contained" style={{ marginTop: '13px' }}>Get my BISH! Price</Button>
+            </div>
           </Link>
         </Container>
       </div>
       <div className="section iphoneSquare">
-        <img className="bg1" src={bg1} alt="bg1" />
         <Container>
+          <img className="bg1" src={bg1} alt="bg1" />
           <img className="iphone" src={iphone} alt="iphone" />
         </Container>
       </div>
+
     </div>
   </Container>
 )

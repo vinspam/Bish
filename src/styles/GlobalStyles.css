@@ -43,3 +43,68 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.flexWrapAround {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bigTitle {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: clamp(2.5rem, 3.9vw, 3rem);
+  font-weight: 800;
+  font-family: 'RaleWay';
+  margin: 0;
+}
+
+.title {
+  /* font-size: clamp(2rem, 3.5vw, 2.72rem); */
+  font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+  line-height: clamp(2.8rem, 3.9vw, 3.4rem);
+  font-weight: 800;
+  margin: 20px 0;
+  font-family: 'RaleWay';
+}
+
+.subTitle {
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  line-height: clamp(1.8rem, 3.5vw, 2.0rem);
+  font-weight: 600;
+  font-family: 'RaleWay';
+}
+
+.cardTitle {
+  font-size: clamp(1.45rem, 3vw, 1.7rem);
+  line-height: clamp(2rem, 4vw, 2.3rem);
+  font-weight: 600;
+  margin: 20px 0 0 0;
+  font-family: 'RaleWay';
+}
+
+.checkBoxTitle {
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
+  line-height: clamp(1.3rem, 3vw, 1.5rem);
+  font-weight: 500;
+  margin: 10px 0;
+  font-family: 'RaleWay';
+}
+
+.heroCard span {
+  font-size: clamp(1.3rem, 3.5vw, 1.4rem);
+  line-height: clamp(1.8rem, 3.5vw, 2.0rem);
+  color: #272727;
+}
+
+.text {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  line-height: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  font-family: 'Inter';
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .title {
+    margin: 10px;
+  }
+}

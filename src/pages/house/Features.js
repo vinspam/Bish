@@ -17,9 +17,9 @@ const featuresInfo = [
   }
 ]
 
-export const Features = () => (
-  <div className="features featureMargin">
-    <div className="heroTitleMargin" style={{ fontWeight: '600' }}>How to get your home’s BISH! code</div>
+export const NewFeatures = () => (
+  <div className="features">
+    <div className="title">How to get your home’s BISH! code</div>
     <div className="featureItems">
       {featuresInfo.map((item, index) => (
         <FeatureBox key={index} item={item} />

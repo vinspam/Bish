@@ -5,10 +5,11 @@
 }
 
 .getting_title {
+  font-family: "Raleway";
   margin: auto;
   padding-top: 173px;
   width: 818px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 43.99px;
   line-height: 53.8px;
   color: #000000;
@@ -27,7 +28,9 @@
   display: flex;
   align-items: center;
   background: #f5f5f5;
-  padding: 25px 30px;
+  /* padding: 10px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-radius: 6.36px;
   margin-top: 40px;
 }
@@ -35,12 +38,12 @@
 .card_check {
   width: 38px;
   height: 38px;
+  margin-left: 20px;
 }
 
 .card_title {
   font-size: 20.5px;
   font-weight: 600;
-  margin-left: 5px;
 }
 
 .getting_Bar {
@@ -50,6 +53,7 @@
 }
 
 .bartext1 {
+  font-family: "Raleway";
   width: 913.55px;
   font-size: 38.33px;
   font-weight: 800;
@@ -61,6 +65,7 @@
 }
 
 .bartext2 {
+  font-family: "Raleway";
   width: 421.01px;
   font-size: 24.06px;
   font-weight: 600;
@@ -85,12 +90,14 @@
 }
 
 .header_title {
+  font-family: "Raleway";
   font-size: 37.61px;
   font-weight: 800;
   text-align: center;
 }
 
 .liveInfo {
+  font-family: "Raleway";
   width: 160px;
   font-weight: 600;
   font-size: 22.37px;
@@ -126,11 +133,13 @@
 
 .inputlabel {
   font-family: "Raleway";
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 28.53px;
 }
 
 .findAddBtn {
+  font-family: "Inter";
+  font-weight: 800;
   width: 47%;
   height: 50px;
   margin-top: 30px;
@@ -138,7 +147,7 @@
   border: none;
   border-radius: 10.16px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 22.23px;
 }
 
 .checkBish {
@@ -337,24 +346,31 @@
 @media (max-width: 450px) {
   .getting_title {
     width: 210px;
-    height: 107px;
+
     border-radius: 11.43px;
-    font-size: 20px;
-    padding: 20px 10px 10px 10px;
+    font-weight: 800;
+    font-size: 19.77px;
+    line-height: 27px;
+    padding: 20px 10px 20px 10px;
     background-image: linear-gradient(#f4e1f2, #ebebeb, #ffd7fb);
   }
 
+  .getting_Bar {
+    width: 253px;
+  }
+
   .bartext1 {
-    width: 280px;
-    font-size: 18px;
-    line-height: 25px;
+    width: 240px;
+    font-size: 17.95px;
+    line-height: 24.17px;
     color: #000000;
   }
 
   .bartext2 {
     width: 270px;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 14.49px;
+    font-weight: 400;
+    line-height: 24.63px;
     color: #000000;
   }
 
@@ -375,16 +391,34 @@
 
   .inputheader1 {
     margin: auto;
-    width: 318px;
+    width: 280px;
     margin-top: 80px;
   }
 
   .header_title {
-    font-size: 23px;
+    font-family: "Raleway";
+    font-weight: 800;
+    line-height: 18.87px;
+    font-size: 16.2px;
   }
 
   .liveInfo {
-    font-size: 15px;
+    font-size: 13.11px;
     padding-bottom: 12px;
+    font-weight: 600;
+    line-height: 15.27px;
+  }
+
+  .inputlabel {
+    font-size: 16.22px;
+  }
+
+  .positionIcon {
+    top: 40px !important;
+  }
+
+  .findAddBtn {
+    font-weight: 800;
+    font-size: 14.78px;
   }
 }

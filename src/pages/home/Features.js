@@ -1,7 +1,7 @@
 import React from "react"
 import { Container } from "@mui/system"
-import { book, locationWhite, sms } from "../../constant"
-import { FeatureBox } from "../../components/box/FeatureBox"
+import { book, locationWhite, sms, } from "../../constant"
+import { FeatureBox2 } from "../../components/box/FeatureBox2"
 
 const featuresInfo = [
   {
@@ -21,10 +21,10 @@ const featuresInfo = [
 export const Features = () => (
   <div className="features">
     <Container>
-      <p className="aboutTitle">How to get your home’s BISH! code</p>
+      <p className="title fontInter">How to get your home’s BISH! code</p>
       <div className="featureItems">
         {featuresInfo.map((item, index) => (
-          <FeatureBox key={index} item={item} />
+          <FeatureBox2 key={index} item={item} />
         ))}
       </div>
     </Container>

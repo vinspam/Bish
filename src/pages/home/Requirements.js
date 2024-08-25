@@ -22,8 +22,8 @@ export const Requirements = () => (
       <div>
         {cardInfo.map((item, index) => (
           <div key={index} className="requirementCard">
-            <span className="aboutTitle">{item.title}</span>
-            <p className="aboutDescription" style={{ width: '65%' }}>{item.text}</p>
+            <span className="title aboutTitle">{item.title}</span>
+            <p className="cardTitle">{item.text}</p>
             <div className="requirementCardIcon itemCenter">
               <img src={checkRoundPink} alt={checkRoundPink} style={{ width: '35px' }} />
             </div>
@@ -31,10 +31,10 @@ export const Requirements = () => (
         ))}
       </div>
     </div>
-    <div className='about' style={{ textAlign: 'center' }}>
-      <p className='aboutTitle'>Already got your home`s tradesperson BANG! code?</p>
-      <p className='aboutDescription' style={{ margin: '0 10%' }}>Call your local BANG! team now and tell us about the job and we`ll confirm your BANG! price.</p>
-      <p className="aboutTitle number">0800 367 3993</p>
+    <div className='about showContainer' style={{ textAlign: 'center' }}>
+      <p className='title number' style={{ fontFamily: 'Inter' }}>Already got your home`s tradesperson BANG! code?</p>
+      <p className='text' style={{ margin: '0 5%' }}>Call your local BANG! team now and tell us about the job and we`ll confirm your BANG! price.</p>
+      <p className="title number">0800 367 3993</p>
     </div>
   </>
 )

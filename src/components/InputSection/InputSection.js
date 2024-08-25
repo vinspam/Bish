@@ -26,10 +26,11 @@ const InputSection = () => {
             <br />
             <input className="leftInput" placeholder="Enter your postcode" />
             <LocationOnOutlinedIcon
+              className="positionIcon"
               style={{
                 color: "#FB2A63",
                 position: "absolute",
-                top: "50px",
+                top: "55px",
                 left: "5px",
               }}
             />

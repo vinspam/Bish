@@ -1,5 +1,5 @@
 import React from "react";
-import Header from '../../components/layouts/Header/Header'
+import Header from "../../components/layouts/Header/Header";
 import Awesome from "../../components/Awesome/Awesome";
 import EditNumber from "../../components/EditNumber/EditNumber";
 import FaqSec from "../../components/FaqSec/FaqSec";

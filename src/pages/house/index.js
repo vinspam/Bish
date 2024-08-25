@@ -1,15 +1,15 @@
 import React from 'react'
 
 import './house.css'
-import { Hero } from './Hero'
-import { Features } from './Features'
-import { JobTime } from './JobTime'
+import { NewHero } from './Hero'
+import { NewFeatures } from './Features'
+import { NewJobTime } from './JobTime'
 
 const House = () => (
   <div>
-    <Hero />
-    <Features />
-    <JobTime />
+    <NewHero />
+    <NewFeatures />
+    <NewJobTime />
   </div>
 )
 
