@@ -6,9 +6,9 @@ import { Container } from '@mui/system'
 const jobTypeInfo = ['Easy to book', 'Local', 'Insured', 'Reliable', 'Experts']
 
 export const JobTime = () => (
-  <div>
+  <div className='jobTime'>
     <Container className='container' style={{ position: 'relative', }}>
-      <div className='hero flexWrap' style={{ backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0), rgba(214, 61, 102, 0.05)' }}>
+      <div className='hero flexWrap'>
         <div className="section iphoneSquare" style={{ width: '45%' }}>
           <Container>
             <img className="bg2" src={bg2} alt="bg2" />

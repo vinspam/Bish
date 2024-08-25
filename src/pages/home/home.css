@@ -72,6 +72,11 @@
 }
 
 
+.jobTime {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(214, 61, 102, 0.05));
+    max-width: 1200px;
+    margin: auto;
+}
 
 .jobText {
     padding: 90px;
@@ -102,6 +107,8 @@
 
 
 .requirements {
+    max-width: 1200px;
+    margin: auto;
     background-color: #F5F5F5;
     padding: 40px 0;
 }

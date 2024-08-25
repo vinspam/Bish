@@ -1,9 +1,9 @@
 .footer {
-    width: 100%;
-    padding: 10px 0;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
     background-color: var(--primary-bgColor);
     color: white;
-    font-size: 11px;
 }
 
 .footerTitle {
