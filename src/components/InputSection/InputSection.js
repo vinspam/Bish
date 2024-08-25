@@ -25,18 +25,20 @@ const InputSection = () => {
           <div className="inputWrapper">
             <label className="inputlabel">Select a town</label>
             <br />
+            <p style={{ marginBottom: '10px', color: "#272727" }}>BISH! codes are only available in these towns right now</p>
             <input className="leftInput" />
           </div>
           <div className="inputWrapper" style={{ position: "relative" }}>
             <label className="inputlabel">Postcode</label>
             <br />
+            <p style={{ marginBottom: '10px', color: "#272727" }}>then select your home address from the list</p>
             <input className="leftInput" placeholder="Enter your postcode" />
             <LocationOnOutlinedIcon
               className="positionIcon"
               style={{
                 color: "#FB2A63",
                 position: "absolute",
-                top: "55px",
+                top: "95px",
                 left: "5px",
               }}
             />
