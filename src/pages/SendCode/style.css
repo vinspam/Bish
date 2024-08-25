@@ -3,37 +3,36 @@
 .awesomeContainer {
   width: 100%;
   background-image: linear-gradient(#f4e1f2, #ebebeb, #ffd7fb);
+  max-width: 1200px;
+  margin: auto;
 }
 
 .awesomeWrapper {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
   padding: 1px;
 }
 
 .awesomeText {
   font-family: "Inter";
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: clamp(3.5rem, 3.9vw, 3rem);
   font-weight: 800;
-  width: 535px;
-  font-size: 44.36px;
-  font-weight: 700;
-  line-height: 65.21px;
   text-align: center;
   margin: auto;
-  padding-top: 70px;
+  width: 535px;
+  /* padding-top: 70px; */
   margin-top: 70px;
   margin-bottom: 70px;
 }
 
 .eNumberCon {
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .eNumberWra {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   justify-content: space-around;
 }
@@ -44,9 +43,9 @@
 
 .NumleftText {
   width: 80%;
-  font-size: 29.36px;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: clamp(2.5rem, 3.9vw, 3rem);
   font-weight: 800;
-  line-height: 43.16px;
   text-align: center;
   font-family: "Inter";
   margin: auto;
@@ -55,7 +54,7 @@
 
 .NumLeftNum {
   font-family: "Inter";
-  font-size: 24.15px;
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
   font-weight: 600;
   margin: auto;
   text-align: center;
@@ -94,7 +93,7 @@
 
 .eNumRigText {
   font-family: "Inter";
-  font-size: 33.09px;
+  font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 800;
 }
 
@@ -106,73 +105,35 @@
 
 .nextText {
   font-family: "Inter";
-  font-size: 21.34px;
-  font-weight: 400;
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  line-height: clamp(1.8rem, 3.5vw, 2.0rem);
+  font-weight: 600;
   margin-left: 30px;
-  /* padding-bottom: 30px; */
 }
 
 .faqContainer {
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
   background: #fb2a63;
-}
-
-.otherFaq .faqContainer {
-  background: white;
-}
-
-.otherFaq .faqTitle {
-  color: black;
-}
-
-.otherFaq .accordionBody {
-  background: white !important;
-  box-shadow: none !important;
-}
-
-.otherFaq .faqAccTitle {
-  color: black !important;
-}
-
-.otherFaq .faqText {
-  color: black !important;
-}
-
-.otherFaq hr {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 96%;
-  border: 1px solid #a1a1a1 !important;
-}
-
-.otherFaq .arrowIcon {
-  font-size: 45px !important;
-  color: black;
 }
 
 .faqWrapper {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
   padding-bottom: 60px;
-}
-
-.accordionBody {
-  background: #fb2a63 !important;
-  box-shadow: none !important;
 }
 
 .css-1086bdv-MuiPaper-root-MuiAccordion-root::before {
   height: 0 !important;
 }
 
-.arrowIcon {
-  font-size: 45px !important;
-  color: white;
+.faq-header-active {
+  border: none !important;
+  /* Remove border-bottom when active */
 }
 
 .faqTitle {
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-size: 43.46px;
   color: white;
   text-align: center;
   font-family: "Gilroy-Bold";
@@ -182,38 +143,45 @@
 
 .faqAccTitle {
   font-family: "Gilroy-Bold";
-  font-size: 32.59px;
+  font-size: 43.46px;
   color: #ffffff;
 }
 
-.faqText {
-  font-family: "Gilroy-Medium";
-  line-height: 25.46px;
-  color: white !important;
+.otherFaq .faqContainer {
+  background: #ffffff;
 }
 
-hr {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 96%;
-  border: 1px solid white !important;
+.otherFaq .faqTitle {
+  color: black;
+}
+
+.otherFaq .faq-label {
+  color: black;
+}
+
+.otherFaq .faq-content {
+  color: black;
+}
+
+.otherFaq .faq-header {
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.otherFaq .faq-label-active {
+  color: #052c65;
 }
 
 @media (max-width: 991px) {
   .awesomeText {
-    font-size: 38px;
     width: 500px;
-    line-height: 58px;
   }
 
   .NumleftText {
     width: 80%;
-    font-size: 25px;
     padding-top: 110px;
   }
 
   .NumLeftNum {
-    font-size: 20px;
     margin-top: 25px;
   }
 
@@ -228,13 +196,7 @@ hr {
     margin-bottom: 70px;
   }
 
-  .eNumRigText {
-    font-size: 27px;
-    font-weight: 800;
-  }
-
   .nextText {
-    font-size: 18px;
     margin-left: 30px;
   }
 
@@ -244,20 +206,12 @@ hr {
 }
 
 @media (max-width: 778px) {
-  .awesomeText {
-    font-size: 32px;
-    width: 450px;
-    line-height: 45px;
-  }
-
   .NumleftText {
     width: 80%;
-    font-size: 22px;
     padding-top: 95px;
   }
 
   .NumLeftNum {
-    font-size: 18px;
     margin-top: 22px;
   }
 
@@ -273,13 +227,7 @@ hr {
     margin-bottom: 70px;
   }
 
-  .eNumRigText {
-    font-size: 23px;
-    font-weight: 800;
-  }
-
   .nextText {
-    font-size: 16px;
     margin-left: 30px;
   }
 
@@ -294,14 +242,11 @@ hr {
   }
 
   .awesomeText {
-    font-size: 22px;
-    width: 380px;
-    line-height: 30px;
+    width: 100%;
     background-color: #fb2a63;
-    padding: 12px;
     border-radius: 6.76px;
     color: #ffffff;
-    margin-top: 130px;
+    padding: 10px 0;
   }
 
   .eNumberWra {
@@ -313,28 +258,17 @@ hr {
   }
 
   .NumleftText {
-    font-size: 20px;
-    width: 250px;
+    width: 90%;
     padding-top: 0px;
-    line-height: 35px;
   }
-
-  .otherFaq .accordionBody {
-    background: #f5f5f5 !important;
-    box-shadow: none !important;
-  }
-
-  /* .eNumRigText {
-    font-size: 14.85px;
-    font-weight: 800;
-  } */
 
   .eNumRigSec {
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-left: 50px;
+    padding-left: 30px;
+    padding-right: 10px;
   }
 
   .nextCon {
@@ -346,7 +280,7 @@ hr {
   }
 
   .NumTopWrap {
-    width: 60%;
+    width: 90%;
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -354,22 +288,25 @@ hr {
     background: linear-gradient(#f4e1f2, #ebebeb, #ffd7fb);
   }
 
-  .accordionBody {
-    background: #f5f5f5 !important;
-    box-shadow: none !important;
-  }
-
   .faqContainer {
     background: #f5f5f5 !important;
   }
 
-  .faqAccTitle {
+  .faq-label {
     font-family: "Raleway";
-    font-size: 21.73px;
+    font-size: 21.73px !important;
     color: #000000 !important;
-    padding: 10px !important;
-    padding-top: 60px;
-    padding-bottom: 20px;
+  }
+
+  .faq-label-active {
+    color: #052c65 !important;
+  }
+
+  .faq-content {
+    font-family: "Raleway";
+    font-size: 18.94px !important;
+    font-weight: 400;
+    color: #000000 !important;
   }
 
   .faqTitle {
@@ -378,53 +315,20 @@ hr {
     font-weight: 800;
   }
 
-  .faqAccTitle {
-    font-family: "Raleway";
-    color: #000000;
-    font-size: 21.73px;
-    font-weight: 800;
+  .chevron-icon {
+    font-size: 0px !important;
   }
 
-  .arrowIcon {
-    color: #f5f5f5;
-  }
-
-  .otherFaq .arrowIcon {
-    color: #f5f5f5;
-  }
-
-  hr {
-    border: 1px solid #737373 !important;
-  }
-
-  .faqText {
-    font-family: "Raleway";
-    font-size: 18.94px;
-    font-weight: 400;
-    color: #000000 !important;
+  .faq-header {
+    border-bottom: 1px solid #737373 !important;
   }
 }
 
 @media (max-width: 450px) {
   .awesomeText {
-    font-size: 14.78px;
-    width: 200px;
-    line-height: 21.73px;
     background-color: #fb2a63;
-    padding: 12px;
     border-radius: 6.76px;
     color: #ffffff;
-  }
-
-  .NumleftText {
-    font-size: 15.27px;
-    line-height: 22.46px;
-    font-weight: 800;
-    width: 200px;
-  }
-
-  .NumLeftNum {
-    font-size: 14px;
   }
 
   .sendBish {
@@ -432,10 +336,6 @@ hr {
     height: 40px;
     font-size: 13px;
     align-items: center;
-  }
-
-  .eNumRigText {
-    font-size: 14.85px;
   }
 
   .eNumRigSec {
@@ -448,7 +348,6 @@ hr {
   }
 
   .nextText {
-    font-size: 12px;
     margin-left: 13px;
   }
 
@@ -460,24 +359,56 @@ hr {
     width: 15px;
     height: 15px;
   }
+}
 
-  .accordionBody {
-    background: #f5f5f5 !important;
-    box-shadow: none !important;
-  }
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
 
-  .faqAccTitle {
-    font-family: "Raleway";
-    font-weight: 800;
-    font-size: 21.73px;
-    line-height: 25.51px;
-    color: #000000 !important;
-  }
+.faq-header:hover {
+  cursor: pointer;
+}
 
-  .faqTitle {
-    font-family: "Raleway";
-    color: #000000;
-    font-size: 21.73px;
-    font-weight: 800;
-  }
+.faq-label {
+  font-size: 32.59px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.faq-label-active {
+  color: #052c65;
+}
+
+.chevron-icon {
+  font-size: 30px;
+  padding-left: 16px;
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.chevron-rotated {
+  transform: rotate(180deg);
+}
+
+.faq-content {
+  font-size: 21.73px;
+  padding-bottom: 2rem;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  font-family: "Gilroy-Medium";
+  line-height: 25.46px;
+  color: white;
+}
+
+.faq-content-open {
+  max-height: 100%;
+  opacity: 1;
 }

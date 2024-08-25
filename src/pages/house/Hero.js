@@ -11,11 +11,13 @@ export const NewHero = () => (
     <div className="hero flexWrap">
       <div className="section" style={{ color: '#272727' }}>
         <Container>
-          <p className="bigTitle">
-            Fed up of high prices? <br />
-            Don't fret. BISH! codes have arrived
-          </p>
-          <p className="subTitle">BISH! is on a mission to save homeowners over £1 million. Unlock your home’s BISH! code today and save BIG on plumbers, insurance and more</p>
+          <div className="heroCard" style={{ background: '#F6F6F6' }}>
+            <p className="bigTitle">
+              Fed up of high prices? <br />
+              Don't fret. BISH! codes have arrived
+            </p>
+            <p className="subTitle">BISH! is on a mission to save homeowners over £1 million. Unlock your home’s BISH! code today and save BIG on plumbers, insurance and more</p>
+          </div>
         </Container>
       </div>
       <div className="section iphoneSquare">

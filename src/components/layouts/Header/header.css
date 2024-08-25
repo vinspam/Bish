@@ -1,8 +1,9 @@
 .header {
+    max-width: 1200px;
     width: 100%;
+    margin: auto;
     height: 70px;
     background: var(--primary-bgColor);
-    position: fixed;
     z-index: 100;
 }
 

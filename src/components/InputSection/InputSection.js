@@ -8,6 +8,12 @@ const InputSection = () => {
   return (
     <div className="inputsection_container">
       <div className="inputheader">
+        <div className="header_title">Your town is</div>
+        <p className="liveInfo">
+          Kingston
+        </p>
+      </div>
+      <div className="inputheader">
         <div className="header_title">You told us you live at</div>
         <p className="liveInfo">
           15, smith street London <br />
@@ -50,6 +56,12 @@ const InputSection = () => {
           </div>
         </div>
         <div className="inputheader1">
+          <div className="header_title">Your town is</div>
+          <p className="liveInfo">
+            Kingston
+          </p>
+        </div>
+        <div className="inputheader1">
           <div className="header_title">You told us you live at</div>
           <p className="liveInfo">
             15, smith street London <br />
@@ -78,6 +90,7 @@ const InputSection = () => {
           <div className="inputWrapper" style={{ position: "relative" }}>
             <label className="inputlabel">Email</label>
             <br />
+            <p style={{ marginBottom: '10px', color: "#272727" }}>We'll send your home's BISH! code by email</p>
             <input className="rightInput" />
             <EmailIcon
               style={{
@@ -91,6 +104,7 @@ const InputSection = () => {
           <div className="inputWrapper" style={{ position: "relative" }}>
             <label className="inputlabel">Mobile phone</label>
             <br />
+            <p style={{ marginBottom: '10px', color: "#272727" }}>We'll send your home's BISH! code by SMS</p>
             <input className="rightInput" />
             <PhoneIcon
               style={{

@@ -1,17 +1,20 @@
 import React from "react";
 import "../../pages/SendCode/style.css";
+import { Container } from "@mui/material";
 
 const Awesome = () => {
   return (
     <div className="awesomeContainer">
-      <div className="awesomeWrapper">
-        <div className="awesomeText">
-          Awesome! a BISH! code
-          <br /> is available at 15, Smith
-          <br /> Street, London,
-          <br /> W2:4EB
+      <Container>
+        <div className="awesomeWrapper">
+          <div className="awesomeText">
+            Awesome! a BISH! code
+            is available at 15, Smith
+            Street, London,
+            W2:4EB
+          </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
