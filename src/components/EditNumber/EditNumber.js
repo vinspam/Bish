@@ -13,9 +13,11 @@ const EditNumber = () => {
           <div className="eNumLefSec">
             <div className="NumTopWrap">
               <p className="NumleftText">
-                We'll send your home's BISH! code by SMS. Your number is.
+                We'll send your home's BISH! code by SMS.
               </p>
               <p className="NumLeftNum">
+                Your number is
+                <br />
                 0784665434
                 <br />
                 Edit number
@@ -41,12 +43,8 @@ const EditNumber = () => {
                 className="editIcon"
               />
               <div className="nextText">
-                Call your local BISH! team to find
-                <br /> out your exclusive BISH! price.
-                <br />
-                Or keep the code safe until you
-                <br />
-                need a tradesperson
+                Call your local BISH! team and quote<br />
+                your home's BISH! code to find out the<br /> exclusive price for your plumbing job.
               </div>
             </div>
             <div className="nextCon">
@@ -57,8 +55,8 @@ const EditNumber = () => {
                 className="editIconImg"
               />
               <div className="nextText">
-                We'll send your home's BISH!
-                <br /> code by text
+                Book when you're ready and pay
+                <br />on completion.
               </div>
             </div>
           </div>

@@ -31,7 +31,7 @@ const InputSection = () => {
           <div className="inputWrapper" style={{ position: "relative" }}>
             <label className="inputlabel">Postcode</label>
             <br />
-            <p style={{ marginBottom: '10px', color: "#272727" }}>then select your home address from the list</p>
+            <p style={{ marginBottom: '10px', color: "#272727" }}>Enter your postcode</p>
             <input className="leftInput" placeholder="Enter your postcode" />
             <LocationOnOutlinedIcon
               className="positionIcon"

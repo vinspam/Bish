@@ -6,9 +6,9 @@ import { Container } from "@mui/system";
 import Header from "../../components/layouts/Header/Header";
 
 const CardData = [
-  { title: "Tell us where your live" },
+  { title: "Tell us where you live" },
   { title: "We’ll send your home’s BISH! code by SMS" },
-  { title: "Contract to your local team to get your exclusive BISH!" },
+  { title: "Tell your local BISH! team about your plumbing job and find out your discounted BISH! price" },
 ];
 
 const SignUp = () => {

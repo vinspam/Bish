@@ -229,7 +229,7 @@
 
   .card_wrapper {
     width: 100%;
-    height: 75px;
+    height: 100px;
     padding-right: 20px;
   }
 
@@ -250,7 +250,7 @@
   }
 
   .bartext1 {
-    width: 380px;
+    width: 95%;
     color: #000000;
   }
 
@@ -325,7 +325,6 @@
 
 @media (max-width: 450px) {
   .bartext1 {
-    width: 240px;
     color: #000000;
   }
 
