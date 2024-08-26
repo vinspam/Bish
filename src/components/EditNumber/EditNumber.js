@@ -16,14 +16,30 @@ const EditNumber = () => {
                 We'll send your home's BISH! code by SMS.
               </p>
               <p className="NumLeftNum">
-                Your number is
-                <br />
                 0784665434
                 <br />
-                Edit number
+                <a
+                  href="#"
+                  className="NumLeftNum"
+                  style={{ color: "rgb(251, 42, 99)" }}
+                >
+                  Edit number
+                </a>
+                <br />
               </p>
+              <div
+                style={{
+                  fontSize: "16px",
+                  fontFamily: "RaleWay",
+                  fontWeight: "600",
+                  textAlign: "center",
+                  marginTop: "15px",
+                }}
+              >
+                OK, YOU'RE ALL SET
+              </div>
+              <button className="sendBish">Send BISH! code</button>
             </div>
-            <button className="sendBish">Send BISH! code</button>
           </div>
           <div className="eNumRigSec">
             <p className="eNumRigText">What next?</p>
@@ -43,8 +59,8 @@ const EditNumber = () => {
                 className="editIcon"
               />
               <div className="nextText">
-                Call your local BISH! team and quote<br />
-                your home's BISH! code to find out the<br /> exclusive price for your plumbing job.
+                Call your local BISH! team and quote your home's BISH! code to
+                find out the exclusive price for your plumbing job.
               </div>
             </div>
             <div className="nextCon">
@@ -56,7 +72,8 @@ const EditNumber = () => {
               />
               <div className="nextText">
                 Book when you're ready and pay
-                <br />on completion.
+                <br />
+                on completion.
               </div>
             </div>
           </div>
