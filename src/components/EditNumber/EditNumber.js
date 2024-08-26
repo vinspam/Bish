@@ -27,16 +27,11 @@ const EditNumber = () => {
                 </a>
                 <br />
               </p>
-              <div
-                style={{
-                  fontSize: "16px",
-                  fontFamily: "RaleWay",
-                  fontWeight: "600",
-                  textAlign: "center",
-                  marginTop: "15px",
-                }}
-              >
-                OK, YOU'RE ALL SET
+            </div>
+            <div className="NumTopWrap1">
+              <div className="numtopTitle">OK, YOU'RE ALL SET</div>
+              <div className="numtopText">
+                We'll send your home's BISH! code straight away.
               </div>
               <button className="sendBish">Send BISH! code</button>
             </div>
