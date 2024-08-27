@@ -68,25 +68,12 @@ export async function userList() {
 }
 
 export async function postCode(form) {
-    console.log("form:::", form);
     try {
-        const res = await fetch(`${END_POINT}/api/address-lookup`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(form)
-        });
-
-        // Check if the response is ok (status is in the 200–299 range)
-        if (!res.ok) {
-            throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-
-        const data = await res.json(); // Parse the JSON from the response
-        return data;
+        const res = await axios.post(`${END_POINT}/api/address-lookup`, form);
+        return res.data;
     } catch (error) {
-        console.error('Error fetching address data:', error);
-        return null; // Return null or handle it in the way you prefer
+        console.error('Error in postCode:', error);
+        // Optionally handle the error or rethrow it
+        throw error; // Ensure the error is thrown so that it can be caught in handleSearch
     }
 }

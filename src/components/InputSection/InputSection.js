@@ -51,34 +51,41 @@ const InputSection = () => {
 
 
   const handleSearch = async () => {
-    postCode({ searchTerm: searchTerm, country: address.country }).then((data) => {
+    try {
+      const data = await postCode({ searchTerm: searchTerm, country: address.country });
 
       if (data?.length === 0) {
+        // Handle the case where no results are found, if needed
       } else {
-        setAddressResults(data)
-        setOpen(true)
+        setAddressResults(data);
+        setOpen(true);
       }
-    })
-    // try {
-    //   const url = 'http://154.223.19.130:5000/api/address-lookup';
-    //   const response = await axios.post(`${url}`, {
-    //     searchTerm: searchTerm,
-    //     country: address.country,
-    //   })
+    } catch (error) {
+      console.error('Error in handleSearch:', error);
+      // Optionally show an error message to the user
+      setResult1(true);
+    }
+  };
 
-    //   const results = response.data
+  // try {
+  //   const url = 'http://154.223.19.130:5000/api/address-lookup';
+  //   const response = await axios.post(`${url}`, {
+  //     searchTerm: searchTerm,
+  //     country: address.country,
+  //   })
 
-    //   if (results.length === 0) {
-    //   } else {
-    //     setAddressResults(results)
-    //     setOpen(true)
-    //   }
-    // } catch (error) {
-    //   // console.error('Error fetching address data', error)
-    //   // alert("Error fetching address data")
-    //   setResult1(true)
-    // }
-  }
+  //   const results = response.data
+
+  //   if (results.length === 0) {
+  //   } else {
+  //     setAddressResults(results)
+  //     setOpen(true)
+  //   }
+  // } catch (error) {
+  //   // console.error('Error fetching address data', error)
+  //   // alert("Error fetching address data")
+  //   setResult1(true)
+  // }
 
 
   const selectedAddress = async (e) => {
