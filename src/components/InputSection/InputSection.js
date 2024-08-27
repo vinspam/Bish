@@ -52,14 +52,31 @@ const InputSection = () => {
 
 
   const handleSearch = async () => {
-    postCode({ searchTerm: searchTerm, country: address.country }).then((data) => {
+    // postCode({ searchTerm: searchTerm, country: address.country }).then((data) => {
 
-      if (data?.length === 0) {
+    //   if (data?.length === 0) {
+    //   } else {
+    //     setAddressResults(data)
+    //     setOpen(true)
+    //   }
+    // })
+    try {
+      const url = `${END_POINT}/api/address-lookup`;
+      const response = await axios.post(`${url}`, {
+        searchTerm: searchTerm,
+        country: address.country,
+      })
+
+      const results = response.data
+
+      if (results.length === 0) {
       } else {
-        setAddressResults(data)
+        setAddressResults(results)
         setOpen(true)
       }
-    })
+    } catch (error) {
+      setResult1(true)
+    }
   }
 
 

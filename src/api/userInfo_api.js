@@ -66,14 +66,3 @@ export async function userList() {
     }
 
 }
-
-export async function postCode(form) {
-    try {
-        const res = await axios.post(`${END_POINT}/api/address-lookup`, form);
-        return res.data;
-    } catch (error) {
-        console.error('Error in postCode:', error);
-        // Optionally handle the error or rethrow it
-        throw error; // Ensure the error is thrown so that it can be caught in handleSearch
-    }
-}
