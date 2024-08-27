@@ -9,7 +9,6 @@ import { Alert, FormControlLabel, Radio, RadioGroup, Fade, Modal, Box, Backdrop 
 
 import { bishCode, create } from "../../api/userInfo_api"
 import { END_POINT } from "../../config"
-import ErrorModal from "../modal"
 
 
 const InputSection = () => {
