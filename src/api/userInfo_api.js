@@ -66,3 +66,12 @@ export async function userList() {
     }
 
 }
+
+export async function postCode(form) {
+    try {
+        const res = await axios.post(`${END_POINT}/api/address-lookup`, form)
+        return res.data
+    } catch (error) {
+        console.log(error)
+    }
+}
