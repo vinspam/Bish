@@ -53,7 +53,7 @@ const InputSection = () => {
   const handleSearch = async () => {
     try {
       const response = await axios.post(`http://154.223.19.130:5000/api/address-lookup`, {
-        searchTerm,
+        searchTerm: searchTerm,
         country: address.country,
       })
 
