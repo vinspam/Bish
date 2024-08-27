@@ -21,7 +21,9 @@ export const Hero = () => (
             <span>Get your home’s 2024 BISH! code by SMS and save BIG on your next tradesperson</span> <br />
             <div className="postCode">
               <i><img src={location} alt='location' style={{ height: '20px' }} /> &nbsp;</i>
-              <input placeholder="Enter your postcode to start" />
+              <Link to='/signup'>
+                <input placeholder="Enter your postcode to start" />
+              </Link>
             </div>
           </div>
           <div className="heroCard" style={{ background: '#F6F6F6', marginTop: '20px' }}>
