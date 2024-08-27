@@ -7,7 +7,7 @@ import EmailIcon from "@mui/icons-material/Email"
 import PhoneIcon from "@mui/icons-material/Phone"
 import { Alert, FormControlLabel, Radio, RadioGroup, Fade, Modal, Box, Backdrop } from "@mui/material"
 
-import { bishCode, create } from "../../api/userInfo_api"
+import { bishCode, create, postCode } from "../../api/userInfo_api"
 import { END_POINT } from "../../config"
 
 
@@ -51,25 +51,34 @@ const InputSection = () => {
 
 
   const handleSearch = async () => {
-    try {
-      const url = 'http://154.223.19.130:5000/api/address-lookup';
-      const response = await axios.post(`${url}`, {
-        searchTerm: searchTerm,
-        country: address.country,
-      })
-
-      const results = response.data
+    postCode({ searchTerm: searchTerm, country: address.country }).then((data) => {
+      const results = data
 
       if (results.length === 0) {
       } else {
         setAddressResults(results)
         setOpen(true)
       }
-    } catch (error) {
-      // console.error('Error fetching address data', error)
-      // alert("Error fetching address data")
-      setResult1(true)
-    }
+    })
+    // try {
+    //   const url = 'http://154.223.19.130:5000/api/address-lookup';
+    //   const response = await axios.post(`${url}`, {
+    //     searchTerm: searchTerm,
+    //     country: address.country,
+    //   })
+
+    //   const results = response.data
+
+    //   if (results.length === 0) {
+    //   } else {
+    //     setAddressResults(results)
+    //     setOpen(true)
+    //   }
+    // } catch (error) {
+    //   // console.error('Error fetching address data', error)
+    //   // alert("Error fetching address data")
+    //   setResult1(true)
+    // }
   }
 
 
