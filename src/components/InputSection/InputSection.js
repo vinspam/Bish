@@ -45,47 +45,22 @@ const InputSection = () => {
     address1: '',
     address2: '',
     city: '',
-    postcode: ''
+    postcode: '',
+    number: ''
   })
 
 
 
   const handleSearch = async () => {
-    try {
-      const data = await postCode({ searchTerm: searchTerm, country: address.country });
+    postCode({ searchTerm: searchTerm, country: address.country }).then((data) => {
 
       if (data?.length === 0) {
-        // Handle the case where no results are found, if needed
       } else {
-        setAddressResults(data);
-        setOpen(true);
+        setAddressResults(data)
+        setOpen(true)
       }
-    } catch (error) {
-      console.error('Error in handleSearch:', error);
-      // Optionally show an error message to the user
-      setResult1(true);
-    }
-  };
-
-  // try {
-  //   const url = 'http://154.223.19.130:5000/api/address-lookup';
-  //   const response = await axios.post(`${url}`, {
-  //     searchTerm: searchTerm,
-  //     country: address.country,
-  //   })
-
-  //   const results = response.data
-
-  //   if (results.length === 0) {
-  //   } else {
-  //     setAddressResults(results)
-  //     setOpen(true)
-  //   }
-  // } catch (error) {
-  //   // console.error('Error fetching address data', error)
-  //   // alert("Error fetching address data")
-  //   setResult1(true)
-  // }
+    })
+  }
 
 
   const selectedAddress = async (e) => {
@@ -100,7 +75,8 @@ const InputSection = () => {
         address1: address.summaryline,
         address2: address.street,
         city: address.posttown,
-        postcode: address.postcode
+        postcode: address.postcode,
+        number: address.number
       }));
 
       try {
@@ -135,6 +111,7 @@ const InputSection = () => {
         // userId = '123'
         if (data.error) { alert("Server Error") }
         else {
+          console.log("data:", data)
           const userId = data._id
           userId ? navigate(`/sendCode/${userId}`) : navigate('/')
         }

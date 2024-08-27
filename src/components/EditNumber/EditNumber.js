@@ -13,7 +13,6 @@ const EditNumber = () => {
 
   const [alertModal, setAlertModal] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
-  const [number, setNumber] = useState('')
   const [success, setSuccess] = useState(false)
 
   const id = useParams();
@@ -25,7 +24,6 @@ const EditNumber = () => {
       if (data.error) { alert("Server Error") }
       else {
         setUser(data)
-        setNumber(data.address1.split(' '))
       }
     })
   }, [])
@@ -74,7 +72,7 @@ const EditNumber = () => {
             <div className="awesomeText">
               Awesome! A BISH! code is available at:
               <div className="awesomeTextSpan">
-                {number[0]}, {user.address2},<br />
+                {user.number}, {user.address2},<br />
                 {user.postcode}
               </div>
             </div>
