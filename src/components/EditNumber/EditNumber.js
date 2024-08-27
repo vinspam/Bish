@@ -22,7 +22,8 @@ const EditNumber = () => {
 
   useEffect(() => {
     read(id.userId).then((data) => {
-      if (data) {
+      if (data.error) { alert("Server Error") }
+      else {
         setUser(data)
         setNumber(data.address1.split(' '))
       }

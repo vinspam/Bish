@@ -9,6 +9,7 @@ import { Alert, FormControlLabel, Radio, RadioGroup, Fade, Modal, Box, Backdrop 
 
 import { bishCode, create } from "../../api/userInfo_api"
 import { END_POINT } from "../../config"
+import ErrorModal from "../modal"
 
 
 const InputSection = () => {
@@ -50,7 +51,7 @@ const InputSection = () => {
   const handleSearch = async () => {
     try {
       const response = await axios.post(`${END_POINT}/api/address-lookup`, {
-        searchTerm,
+        searchTerm: searchTerm,
         country: address.country,
       })
 
@@ -63,6 +64,7 @@ const InputSection = () => {
       }
     } catch (error) {
       console.error('Error fetching address data', error)
+      alert("Error fetching address data")
     }
   }
 
@@ -94,7 +96,6 @@ const InputSection = () => {
 
     } else {
       setResult(true);
-      setTimeout(() => setResult(false), 5000);
     }
 
     setOpen(false);
@@ -112,9 +113,10 @@ const InputSection = () => {
     if (formdata.refno) {
       await create(formdata).then((data) => {
         // userId = '123'
-        if (data) {
+        if (data.error) { alert("Server Error") }
+        else {
           const userId = data._id
-          navigate(`/sendCode/${userId}`)
+          userId ? navigate(`/sendCode/${userId}`) : navigate('/')
         }
       })
     } else {
@@ -287,7 +289,7 @@ const InputSection = () => {
           </Fade>
         </Modal>
       }
-      <Modal open={result}>
+      <Modal open={result} onClose={() => setResult(false)}>
         <Alert severity="error">
           You must input  as 'W2 XXX' correctly
         </Alert>

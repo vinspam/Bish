@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Home from "../pages/home"
 import House from "../pages/house"
 import Footer from "../components/layouts/Footer/Footer"
@@ -13,6 +13,7 @@ const RouterControl = () => {
         <Route path="/house" element={<House />} />
         <Route path='/signUp' element={<SignUp />} />
         <Route path='/sendCode/:userId' element={<SendCode />} />
+        <Route path="*" element={<Navigate to="/signup" replace />} />
       </Routes>
       <Footer />
     </BrowserRouter>
