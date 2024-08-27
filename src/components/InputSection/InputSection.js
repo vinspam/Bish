@@ -48,12 +48,11 @@ const InputSection = () => {
     postcode: ''
   })
 
-  const apiUrl = "https://154.223.19.130:5000/api/address-lookup";
 
 
   const handleSearch = async () => {
     try {
-      const response = await axios.post(`${apiUrl}`, {
+      const response = await axios.post(`${END_POINT}/api/address-lookup`, {
         searchTerm,
         country: address.country,
       })
