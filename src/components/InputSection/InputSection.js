@@ -21,6 +21,7 @@ const InputSection = () => {
   const [open, setOpen] = useState(false)
   const handleClose = () => setOpen(false)
   const [result, setResult] = useState(false)
+  const [result1, setResult1] = useState(false)
 
 
   const [searchTerm, setSearchTerm] = useState('')
@@ -63,8 +64,9 @@ const InputSection = () => {
         setOpen(true)
       }
     } catch (error) {
-      console.error('Error fetching address data', error)
-      alert("Error fetching address data")
+      // console.error('Error fetching address data', error)
+      // alert("Error fetching address data")
+      setResult1(true)
     }
   }
 
@@ -292,6 +294,11 @@ const InputSection = () => {
       <Modal open={result} onClose={() => setResult(false)}>
         <Alert severity="error">
           You must input  as 'W2 XXX' correctly
+        </Alert>
+      </Modal>
+      <Modal open={result1} onClose={() => setResult1(false)}>
+        <Alert severity="error">
+          Error fetching address data
         </Alert>
       </Modal>
 
