@@ -38,7 +38,6 @@ export async function sendextra(param) {
 }
 
 export async function sendEmail(param) {
-    console.log("data:::::", param)
     try {
         const res = await axios.post(`${END_POINT}/api/users/email`, param)
         return res.data

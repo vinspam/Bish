@@ -8,6 +8,7 @@ import PhoneIcon from "@mui/icons-material/Phone"
 import { Alert, FormControlLabel, Radio, RadioGroup, Fade, Modal, Box, Backdrop } from "@mui/material"
 
 import { bishCode, create } from "../../api/userInfo_api"
+import { END_POINT } from "../../config"
 
 
 const InputSection = () => {
@@ -48,7 +49,7 @@ const InputSection = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/address-lookup', {
+      const response = await axios.post(`${END_POINT}/api/address-lookup`, {
         searchTerm,
         country: address.country,
       })
@@ -57,7 +58,6 @@ const InputSection = () => {
 
       if (results.length === 0) {
       } else {
-        console.log("filtered:", results)
         setAddressResults(results)
         setOpen(true)
       }
@@ -88,7 +88,6 @@ const InputSection = () => {
           ...prevFormdata,
           refno: data
         }));
-        console.log("data", data);
       } catch (error) {
         console.error("Error fetching data from bishCode:", error);
       }
@@ -98,7 +97,6 @@ const InputSection = () => {
       setTimeout(() => setResult(false), 5000);
     }
 
-    console.log('selData:', address);
     setOpen(false);
   };
 
@@ -111,12 +109,10 @@ const InputSection = () => {
   const handleSend = async (e) => {
 
     e.preventDefault()
-    console.log("formData:", formdata);
     if (formdata.refno) {
       await create(formdata).then((data) => {
         // userId = '123'
         if (data) {
-          console.log("data", data)
           const userId = data._id
           navigate(`/sendCode/${userId}`)
         }

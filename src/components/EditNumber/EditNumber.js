@@ -24,7 +24,6 @@ const EditNumber = () => {
     read(id.userId).then((data) => {
       if (data) {
         setUser(data)
-        console.log('data : ', data)
         setNumber(data.address1.split(' '))
       }
     })
@@ -51,7 +50,6 @@ const EditNumber = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, [])
-  console.log('number : ', number)
 
   const handleClick = () => {
 
