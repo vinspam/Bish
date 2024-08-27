@@ -7,6 +7,13 @@
   margin: auto;
 }
 
+.iconStyle {
+  color: #A0A0A0;
+  position: absolute;
+  left: 5px;
+  bottom: 10px;
+}
+
 .awesomeWrapper {
   width: 100%;
   padding: 1px;

@@ -1,8 +1,9 @@
 import React from "react";
+import { Container } from "@mui/system";
+
 import GettingCard from "../../components/GettingCard/GettingCard";
 import InputSection from "../../components/InputSection/InputSection";
 import "./style.css";
-import { Container } from "@mui/system";
 import Header from "../../components/layouts/Header/Header";
 
 const CardData = [
@@ -12,6 +13,7 @@ const CardData = [
 ];
 
 const SignUp = () => {
+
   return (
     <>
       <div className="App backgroundColor">

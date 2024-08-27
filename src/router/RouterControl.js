@@ -12,7 +12,7 @@ const RouterControl = () => {
         <Route path="/" element={<Home />} />
         <Route path="/house" element={<House />} />
         <Route path='/signUp' element={<SignUp />} />
-        <Route path='/sendCode' element={<SendCode />} />
+        <Route path='/sendCode/:userId' element={<SendCode />} />
       </Routes>
       <Footer />
     </BrowserRouter>
