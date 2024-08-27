@@ -52,11 +52,10 @@ const InputSection = () => {
 
   const handleSearch = async () => {
     postCode({ searchTerm: searchTerm, country: address.country }).then((data) => {
-      const results = data
 
-      if (results.length === 0) {
+      if (data?.length === 0) {
       } else {
-        setAddressResults(results)
+        setAddressResults(data)
         setOpen(true)
       }
     })
