@@ -66,3 +66,23 @@ export async function userList() {
     }
 
 }
+
+export async function updateNumber(params, user) {
+    console.log("User:", user)
+    try {
+        const res = await axios.put(`${END_POINT}/api/users/` + params.id, user)
+        return res.data
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export async function postCode(form) {
+    try {
+        const res = await axios.post(`${END_POINT}/api/address-lookup`, form);
+        return res.data;
+    } catch (error) {
+        // Optionally handle the error or rethrow it
+        throw error; // Ensure the error is thrown so that it can be caught in handleSearch
+    }
+}

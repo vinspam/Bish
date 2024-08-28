@@ -26,13 +26,13 @@ const InputSection = () => {
   const [searchTerm, setSearchTerm] = useState('')
   const [addressResults, setAddressResults] = useState([])
   const [address, setAddress] = useState({
-    summaryline: '21 Pembridge Gardens, London, Greater London, W2 4EB',
-    number: '15',
+    summaryline: '',
+    number: '',
     premise: '',
-    street: 'Smith Street',
+    street: '',
     dependentlocality: '',
-    posttown: 'London',
-    postcode: 'W2:4EB',
+    posttown: '',
+    postcode: '',
     country: 'UK',
   })
 
@@ -86,6 +86,7 @@ const InputSection = () => {
 
     if (address.postcode.toLowerCase().indexOf('w2') >= 0) {
       setAddress(address);
+      console.log("address::", address)
 
       setFormdata((prevFormdata) => ({
         ...prevFormdata,
@@ -169,8 +170,7 @@ const InputSection = () => {
       <div className="inputheader">
         <div className="header_title">You told us you live at</div>
         <p className="liveInfo">
-          {address.number}, {address.street} <br />
-          {address.postcode}
+          {address.summaryline && address.summaryline}
         </p>
       </div>
       <div className="inputbody">
@@ -223,8 +223,7 @@ const InputSection = () => {
         <div className="inputheader1">
           <div className="header_title">You told us you live at</div>
           <p className="liveInfo">
-            {address.number}, {address.street} <br />
-            {address.postcode}
+            {address.summaryline && address.summaryline}
           </p>
         </div>
         <form className="inputright" onSubmit={(e) => handleSend(e)}>

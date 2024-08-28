@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react"
 import SmsIcon from "@mui/icons-material/Sms"
 import PhoneIcon from "@mui/icons-material/Phone"
-import { Box, Container, Modal } from "@mui/material"
+import { Box, Container, Modal, Button, Dialog, DialogActions, DialogContent, TextField } from "@mui/material"
 import CloseIcon from '@mui/icons-material/Close'
 
 import "../../pages/SendCode/style.css"
 import { mouse } from "../../constant"
-import { read, sendEmail, sendextra, sendsms } from "../../api/userInfo_api"
+import { read, sendEmail, sendextra, sendsms, updateNumber } from "../../api/userInfo_api"
 import { useParams } from "react-router-dom"
 
 const EditNumber = () => {
 
+  const [open, setOpen] = useState(false)
+  const [newPhone, setNewPhone] = useState('')
   const [alertModal, setAlertModal] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
   const [success, setSuccess] = useState(false)
@@ -50,18 +52,32 @@ const EditNumber = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, [])
 
+  const handleEditNumber = () => {
+    updateNumber({ id: user._id }, { phone: newPhone }).then((data) => {
+      if (data) {
+        console.log("phone:", data)
+        setUser({ ...user, ['phone']: data.message })
+      }
+    })
+    console.log('newNumber', newPhone)
+    setOpen(false)
+
+  }
+
   const handleClick = () => {
 
     sendsms(user._id).then((data) => {
       console.log("data1:", data)
       data.message && setTimeout(() => sendextra(user._id).then((data) => {
-        setAlertModal(true)
+        console.log("data2:", data)
+        sendEmail(user).then((data) => {
+          console.log("data3:", data)
+          setAlertModal(true)
+        })
         data.message && setSuccess(true)
-      }), 10000);
+      }), 1000);
     })
-    sendEmail(user).then((data) => {
-      console.log("data3:", data)
-    })
+
   }
 
   return (
@@ -72,8 +88,7 @@ const EditNumber = () => {
             <div className="awesomeText">
               Awesome! A BISH! code is available at:
               <div className="awesomeTextSpan">
-                {user.number}, {user.address2},<br />
-                {user.postcode}
+                {user.address1}<br />
               </div>
             </div>
           </div>
@@ -87,7 +102,22 @@ const EditNumber = () => {
                 <p className="NumleftText">We'll send your home's BISH! code by SMS.</p>
                 <p className="NumLeftNum">
                   {user.phone}<br />
-                  <a href="#" className="NumLeftNum" style={{ color: "rgb(251, 42, 99)" }} >Edit number</a><br />
+                  <span onClick={() => setOpen(true)} className="NumLeftNum" style={{ textDecoration: 'underline', color: "rgb(251, 42, 99)", cursor: 'pointer' }} >Edit number</span><br />
+                  <Dialog
+                    open={open}
+                    onClose={() => setOpen(false)}
+                  >
+                    <DialogContent>
+                      <TextField
+                        autoFocus required label="Phone Number" type="number" fullWidth variant="standard"
+                        onChange={(e) => setNewPhone(e.target.value)}
+                      />
+                    </DialogContent>
+                    <DialogActions>
+                      <Button onClick={() => setOpen(false)}>Cancel</Button>
+                      <Button onClick={handleEditNumber}>Subscribe</Button>
+                    </DialogActions>
+                  </Dialog>
                 </p>
               </div>
               <div className="NumTopWrap1">
